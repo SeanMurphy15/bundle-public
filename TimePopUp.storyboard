@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </mutableArray>
+        <mutableArray key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Time Pop Up View Controller-->
+        <scene sceneID="KHj-O8-ygT">
+            <objects>
+                <viewController storyboardIdentifier="timePopUp" id="WKd-Vx-wIW" customClass="TimePopUpViewController" customModule="Bundle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xj0-8M-PDh"/>
+                        <viewControllerLayoutGuide type="bottom" id="U2m-bp-x2s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hF0-6t-iag">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U6Z-hF-DJz">
+                                <rect key="frame" x="53" y="218" width="309" height="241"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLm-4a-egZ">
+                                        <rect key="frame" x="8" y="8" width="293" height="82"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="82" id="Pri-bP-FDw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="50"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="5" translatesAutoresizingMaskIntoConstraints="NO" id="aXT-Dh-iHk">
+                                        <rect key="frame" x="8" y="98" width="293" height="143"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="143" id="xfu-t8-lu3"/>
+                                        </constraints>
+                                        <date key="date" timeIntervalSinceReferenceDate="493256508.56825799">
+                                            <!--2016-08-18 23:41:48 +0000-->
+                                        </date>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="aXT-Dh-iHk" firstAttribute="trailing" secondItem="PLm-4a-egZ" secondAttribute="trailing" id="2Uc-0G-0hW"/>
+                                    <constraint firstItem="PLm-4a-egZ" firstAttribute="leading" secondItem="U6Z-hF-DJz" secondAttribute="leadingMargin" id="8N2-li-a4i"/>
+                                    <constraint firstItem="aXT-Dh-iHk" firstAttribute="top" secondItem="PLm-4a-egZ" secondAttribute="bottom" constant="8" symbolic="YES" id="AbW-fu-OE8"/>
+                                    <constraint firstItem="aXT-Dh-iHk" firstAttribute="leading" secondItem="PLm-4a-egZ" secondAttribute="leading" id="JP4-Wi-oFm"/>
+                                    <constraint firstAttribute="width" constant="309" id="R2Q-Jx-0nc"/>
+                                    <constraint firstItem="PLm-4a-egZ" firstAttribute="trailing" secondItem="U6Z-hF-DJz" secondAttribute="trailingMargin" id="iev-zt-joN"/>
+                                    <constraint firstItem="PLm-4a-egZ" firstAttribute="top" secondItem="U6Z-hF-DJz" secondAttribute="topMargin" id="k09-wB-bXm"/>
+                                    <constraint firstAttribute="height" constant="241" id="kzW-6H-mag"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhr-bp-LZP">
+                                <rect key="frame" x="53" y="467" width="309" height="44"/>
+                                <color key="backgroundColor" red="0.26666666666666666" green="0.6588235294117647" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SD6-vS-FMb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="17"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="WKd-Vx-wIW" eventType="touchUpInside" id="NjV-24-ant"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="U6Z-hF-DJz" firstAttribute="centerX" secondItem="hF0-6t-iag" secondAttribute="centerX" id="Jcg-GJ-QhJ"/>
+                            <constraint firstItem="zhr-bp-LZP" firstAttribute="centerX" secondItem="U6Z-hF-DJz" secondAttribute="centerX" id="iJX-AX-kWN"/>
+                            <constraint firstItem="zhr-bp-LZP" firstAttribute="centerY" secondItem="U6Z-hF-DJz" secondAttribute="centerY" constant="150.5" id="mAe-JY-RR9"/>
+                            <constraint firstItem="zhr-bp-LZP" firstAttribute="width" secondItem="U6Z-hF-DJz" secondAttribute="width" id="vjE-wi-OX7"/>
+                            <constraint firstItem="U6Z-hF-DJz" firstAttribute="centerY" secondItem="hF0-6t-iag" secondAttribute="centerY" constant="-29.5" id="wIu-cd-obs"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="doneButton" destination="zhr-bp-LZP" id="ENJ-cC-ebm"/>
+                        <outlet property="timeLabel" destination="PLm-4a-egZ" id="gaI-Ah-wtd"/>
+                        <outlet property="timePicker" destination="aXT-Dh-iHk" id="yXU-T5-nwQ"/>
+                        <outlet property="timeView" destination="U6Z-hF-DJz" id="p8H-qR-xxW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fll-1z-H2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695" y="502"/>
+        </scene>
+    </scenes>
+</document>

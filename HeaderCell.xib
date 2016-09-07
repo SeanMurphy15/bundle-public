@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+            <string>Raleway-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="headerCell" rowHeight="129" id="zE5-21-yAQ" customClass="HeaderCell" customModule="Bundle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zE5-21-yAQ" id="DtH-Cg-3n9">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="128.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" alpha="0.05000000074505806" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock-concert" translatesAutoresizingMaskIntoConstraints="NO" id="g8o-CX-Hz8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="122.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile-image" translatesAutoresizingMaskIntoConstraints="NO" id="rur-Kk-Yew">
+                        <rect key="frame" x="170" y="8" width="75" height="75"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rur-Kk-Yew" secondAttribute="height" multiplier="1:1" id="Hgp-9b-hSO"/>
+                            <constraint firstAttribute="width" constant="75" id="NGL-KA-23z"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUm-Bz-CI4">
+                        <rect key="frame" x="8" y="107" width="398" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="NWt-cI-Sbh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="10"/>
+                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4T-g6-UAq">
+                        <rect key="frame" x="8" y="87" width="398" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Z9B-Lj-LAe"/>
+                            <constraint firstAttribute="width" constant="398" id="zIF-e6-gmR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.098039215686274508" green="0.36470588235294116" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="WUm-Bz-CI4" firstAttribute="leading" secondItem="DtH-Cg-3n9" secondAttribute="leadingMargin" id="1cC-GH-BLu"/>
+                    <constraint firstItem="rur-Kk-Yew" firstAttribute="top" secondItem="DtH-Cg-3n9" secondAttribute="topMargin" id="7hp-Rj-mpB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WUm-Bz-CI4" secondAttribute="bottom" constant="-3.5" id="A1i-us-865"/>
+                    <constraint firstItem="g8o-CX-Hz8" firstAttribute="centerX" secondItem="WUm-Bz-CI4" secondAttribute="centerX" id="DoI-UU-l8W"/>
+                    <constraint firstItem="g8o-CX-Hz8" firstAttribute="leading" secondItem="DtH-Cg-3n9" secondAttribute="leading" id="QT7-cF-moh"/>
+                    <constraint firstItem="rur-Kk-Yew" firstAttribute="centerX" secondItem="WUm-Bz-CI4" secondAttribute="centerX" id="U5g-Fb-UKY"/>
+                    <constraint firstItem="WUm-Bz-CI4" firstAttribute="top" secondItem="rur-Kk-Yew" secondAttribute="bottom" constant="24" id="h0j-Xl-fxW"/>
+                    <constraint firstItem="WUm-Bz-CI4" firstAttribute="trailing" secondItem="DtH-Cg-3n9" secondAttribute="trailingMargin" id="jt5-vT-31c"/>
+                    <constraint firstItem="L4T-g6-UAq" firstAttribute="centerX" secondItem="DtH-Cg-3n9" secondAttribute="centerX" id="nsU-J4-Qpa"/>
+                    <constraint firstItem="g8o-CX-Hz8" firstAttribute="centerY" secondItem="DtH-Cg-3n9" secondAttribute="centerY" constant="-3" id="per-VE-AW1"/>
+                    <constraint firstItem="L4T-g6-UAq" firstAttribute="centerY" secondItem="DtH-Cg-3n9" secondAttribute="centerY" constant="33.25" id="qhp-7m-Ixq"/>
+                    <constraint firstItem="g8o-CX-Hz8" firstAttribute="top" secondItem="DtH-Cg-3n9" secondAttribute="top" id="wep-8h-XU1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backgroundImageOverlay" destination="g8o-CX-Hz8" id="8fz-Lz-sHy"/>
+                <outlet property="iconImageView" destination="rur-Kk-Yew" id="WP3-DU-Xgi"/>
+                <outlet property="subtitleLabel" destination="WUm-Bz-CI4" id="SYR-jX-Qqp"/>
+                <outlet property="titleLabel" destination="L4T-g6-UAq" id="dzY-O9-qmi"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile-image" width="3264" height="2448"/>
+        <image name="rock-concert" width="1680" height="584"/>
+    </resources>
+</document>

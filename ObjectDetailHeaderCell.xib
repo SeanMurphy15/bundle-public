@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
+            <string>Raleway-Bold</string>
+        </mutableArray>
+        <mutableArray key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="objectDetailHeaderCell" rowHeight="129" id="ARj-c4-tHU" customClass="ObjectDetailHeaderCell" customModule="Bundle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ARj-c4-tHU" id="F8N-jo-tMH">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="128.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" userInteractionEnabled="NO" alpha="0.05000000074505806" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock-concert" translatesAutoresizingMaskIntoConstraints="NO" id="8yG-eq-nTZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="129"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-paypal-card-large-dark" translatesAutoresizingMaskIntoConstraints="NO" id="nZy-JD-0iZ">
+                        <rect key="frame" x="36" y="18" width="143" height="93"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="nZy-JD-0iZ" secondAttribute="height" multiplier="143:93" id="pru-Ov-h0B"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Updated:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXY-Sh-rzr">
+                        <rect key="frame" x="42" y="111" width="52" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="52" id="lU8-I0-86w"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="7"/>
+                        <color key="textColor" red="0.3411764706" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAF-mt-vhN">
+                        <rect key="frame" x="187" y="22" width="219" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="bZr-Df-q4t"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June 2nd, 2016" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eT2-19-3Vj">
+                        <rect key="frame" x="102" y="111" width="72" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="72" id="zTo-jm-xjp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="7"/>
+                        <color key="textColor" red="0.96078431369999995" green="0.49019607840000001" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hiP-PA-A3N">
+                        <rect key="frame" x="261" y="94" width="145" height="17"/>
+                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="7"/>
+                        <color key="textColor" red="0.3411764706" green="0.71858838339999997" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Default:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Js4-6c-4nu">
+                        <rect key="frame" x="187" y="94" width="66" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="29R-e9-4E2"/>
+                            <constraint firstAttribute="width" constant="66" id="Y5k-rJ-6cA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="7"/>
+                        <color key="textColor" red="0.3411764706" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Th9-Q6-gY8">
+                        <rect key="frame" x="261" y="111" width="145" height="17"/>
+                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="7"/>
+                        <color key="textColor" red="0.3411764706" green="0.71858838339999997" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collection Default:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIE-47-T8q">
+                        <rect key="frame" x="187" y="112" width="66" height="17"/>
+                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="7"/>
+                        <color key="textColor" red="0.3411764706" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dd-Id-Wji">
+                        <rect key="frame" x="187" y="77" width="66" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="66" id="39I-aE-lVm"/>
+                            <constraint firstAttribute="height" constant="17" id="Eli-0R-j6E"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="7"/>
+                        <color key="textColor" red="0.3411764706" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jN-Th-ykv">
+                        <rect key="frame" x="261" y="77" width="145" height="17"/>
+                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="7"/>
+                        <color key="textColor" red="0.031372549019607843" green="0.83921568627450982" blue="0.054901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7J-D6-clB">
+                        <rect key="frame" x="187" y="53" width="219" height="24"/>
+                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                        <color key="textColor" red="0.3411764706" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="Js4-6c-4nu" firstAttribute="top" secondItem="G7J-D6-clB" secondAttribute="bottom" constant="17" id="0fQ-mr-Eiq"/>
+                    <constraint firstItem="Js4-6c-4nu" firstAttribute="top" secondItem="hiP-PA-A3N" secondAttribute="top" id="5ae-P6-oQe"/>
+                    <constraint firstItem="hiP-PA-A3N" firstAttribute="leading" secondItem="Th9-Q6-gY8" secondAttribute="leading" id="6VI-IL-kmU"/>
+                    <constraint firstAttribute="trailing" secondItem="8yG-eq-nTZ" secondAttribute="trailing" id="6gH-fY-9ib"/>
+                    <constraint firstItem="3Dd-Id-Wji" firstAttribute="leading" secondItem="Js4-6c-4nu" secondAttribute="leading" id="78q-v8-iIM"/>
+                    <constraint firstItem="MAF-mt-vhN" firstAttribute="trailing" secondItem="G7J-D6-clB" secondAttribute="trailing" id="9LA-wW-LGN"/>
+                    <constraint firstItem="nZy-JD-0iZ" firstAttribute="top" secondItem="F8N-jo-tMH" secondAttribute="topMargin" constant="10" id="Blx-KL-Vfj"/>
+                    <constraint firstItem="8yG-eq-nTZ" firstAttribute="top" secondItem="F8N-jo-tMH" secondAttribute="top" id="Bsm-CS-VVc"/>
+                    <constraint firstItem="3Dd-Id-Wji" firstAttribute="baseline" secondItem="1jN-Th-ykv" secondAttribute="baseline" id="CMm-er-3cq"/>
+                    <constraint firstItem="MAF-mt-vhN" firstAttribute="top" secondItem="F8N-jo-tMH" secondAttribute="topMargin" constant="14" id="EtI-A7-0vX"/>
+                    <constraint firstItem="KXY-Sh-rzr" firstAttribute="top" secondItem="nZy-JD-0iZ" secondAttribute="bottom" id="G6l-J7-Ea4"/>
+                    <constraint firstItem="OIE-47-T8q" firstAttribute="bottom" secondItem="Th9-Q6-gY8" secondAttribute="bottom" constant="1" id="Gk8-BS-V3p"/>
+                    <constraint firstItem="OIE-47-T8q" firstAttribute="top" secondItem="Th9-Q6-gY8" secondAttribute="top" constant="1" id="HO7-tX-PGz"/>
+                    <constraint firstItem="G7J-D6-clB" firstAttribute="trailing" secondItem="hiP-PA-A3N" secondAttribute="trailing" id="IV0-rL-rWz"/>
+                    <constraint firstItem="KXY-Sh-rzr" firstAttribute="centerY" secondItem="eT2-19-3Vj" secondAttribute="centerY" id="Kfo-YE-xax"/>
+                    <constraint firstItem="MAF-mt-vhN" firstAttribute="leading" secondItem="nZy-JD-0iZ" secondAttribute="trailing" constant="8" symbolic="YES" id="LOb-eQ-ji3"/>
+                    <constraint firstItem="3Dd-Id-Wji" firstAttribute="firstBaseline" secondItem="1jN-Th-ykv" secondAttribute="firstBaseline" id="LwI-4h-O4Y"/>
+                    <constraint firstItem="Th9-Q6-gY8" firstAttribute="leading" secondItem="OIE-47-T8q" secondAttribute="trailing" constant="8" symbolic="YES" id="MDe-dQ-rDc"/>
+                    <constraint firstItem="Js4-6c-4nu" firstAttribute="leading" secondItem="OIE-47-T8q" secondAttribute="leading" id="NMP-yf-mcK"/>
+                    <constraint firstItem="MAF-mt-vhN" firstAttribute="leading" secondItem="G7J-D6-clB" secondAttribute="leading" id="O6G-6l-6PN"/>
+                    <constraint firstItem="Js4-6c-4nu" firstAttribute="bottom" secondItem="hiP-PA-A3N" secondAttribute="bottom" id="QP0-zt-J1r"/>
+                    <constraint firstItem="8yG-eq-nTZ" firstAttribute="leading" secondItem="F8N-jo-tMH" secondAttribute="leading" id="QyP-Bd-n9D"/>
+                    <constraint firstItem="MAF-mt-vhN" firstAttribute="trailing" secondItem="F8N-jo-tMH" secondAttribute="trailingMargin" id="SRh-Rg-t0K"/>
+                    <constraint firstItem="hiP-PA-A3N" firstAttribute="leading" secondItem="Js4-6c-4nu" secondAttribute="trailing" constant="8" symbolic="YES" id="THa-iN-Qh1"/>
+                    <constraint firstItem="KXY-Sh-rzr" firstAttribute="firstBaseline" secondItem="eT2-19-3Vj" secondAttribute="firstBaseline" id="WZf-9w-eI8"/>
+                    <constraint firstItem="Js4-6c-4nu" firstAttribute="top" secondItem="3Dd-Id-Wji" secondAttribute="bottom" id="Wdi-QE-rfo"/>
+                    <constraint firstItem="nZy-JD-0iZ" firstAttribute="leading" secondItem="F8N-jo-tMH" secondAttribute="leadingMargin" constant="28" id="YyV-ZQ-rKv"/>
+                    <constraint firstItem="1jN-Th-ykv" firstAttribute="leading" secondItem="3Dd-Id-Wji" secondAttribute="trailing" constant="8" symbolic="YES" id="a9M-lG-tqT"/>
+                    <constraint firstItem="OIE-47-T8q" firstAttribute="leading" secondItem="eT2-19-3Vj" secondAttribute="trailing" constant="13" id="aYg-QX-0AX"/>
+                    <constraint firstItem="eT2-19-3Vj" firstAttribute="leading" secondItem="KXY-Sh-rzr" secondAttribute="trailing" constant="8" symbolic="YES" id="anL-df-bkm"/>
+                    <constraint firstItem="1jN-Th-ykv" firstAttribute="trailing" secondItem="F8N-jo-tMH" secondAttribute="trailingMargin" id="fVx-4A-YwX"/>
+                    <constraint firstItem="eT2-19-3Vj" firstAttribute="baseline" secondItem="OIE-47-T8q" secondAttribute="baseline" constant="-1" id="fxf-1F-ax3"/>
+                    <constraint firstItem="OIE-47-T8q" firstAttribute="top" secondItem="Js4-6c-4nu" secondAttribute="bottom" constant="1" id="g2N-gG-uI0"/>
+                    <constraint firstItem="G7J-D6-clB" firstAttribute="leading" secondItem="Js4-6c-4nu" secondAttribute="leading" id="hVn-aK-Afq"/>
+                    <constraint firstItem="G7J-D6-clB" firstAttribute="top" secondItem="MAF-mt-vhN" secondAttribute="bottom" id="kMZ-kb-9jp"/>
+                    <constraint firstItem="8yG-eq-nTZ" firstAttribute="bottom" secondItem="KXY-Sh-rzr" secondAttribute="bottom" id="lMT-tu-DPF"/>
+                    <constraint firstItem="nZy-JD-0iZ" firstAttribute="centerY" secondItem="G7J-D6-clB" secondAttribute="centerY" constant="-0.5" id="nPB-jB-qem"/>
+                    <constraint firstItem="8yG-eq-nTZ" firstAttribute="centerY" secondItem="nZy-JD-0iZ" secondAttribute="centerY" id="qpk-Z5-K8Q"/>
+                    <constraint firstItem="nZy-JD-0iZ" firstAttribute="leading" secondItem="KXY-Sh-rzr" secondAttribute="leading" constant="-6" id="sEm-7X-7t5"/>
+                    <constraint firstItem="8yG-eq-nTZ" firstAttribute="centerY" secondItem="F8N-jo-tMH" secondAttribute="centerY" id="yFO-LV-PTA"/>
+                    <constraint firstItem="hiP-PA-A3N" firstAttribute="trailing" secondItem="Th9-Q6-gY8" secondAttribute="trailing" id="zRq-gG-c3O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backgroundImageOverlay" destination="8yG-eq-nTZ" id="qpH-3b-Y84"/>
+                <outlet property="iconImageView" destination="nZy-JD-0iZ" id="HsY-il-9Bb"/>
+                <outlet property="statusLabel" destination="hiP-PA-A3N" id="8xx-Wp-AU6"/>
+                <outlet property="subTitleLabel" destination="G7J-D6-clB" id="6qs-KP-wd0"/>
+                <outlet property="tag2Label" destination="hiP-PA-A3N" id="sOK-mZ-V8M"/>
+                <outlet property="tag2TitleLabel" destination="Js4-6c-4nu" id="9Dt-Gk-n0G"/>
+                <outlet property="tag3Label" destination="Th9-Q6-gY8" id="ea4-Q5-q2S"/>
+                <outlet property="tag3TitleLabel" destination="OIE-47-T8q" id="NuD-7n-rlp"/>
+                <outlet property="tag4Label" destination="1jN-Th-ykv" id="mls-04-rjF"/>
+                <outlet property="tag4TitleLabel" destination="3Dd-Id-Wji" id="8wL-Ij-39c"/>
+                <outlet property="tagLabel" destination="eT2-19-3Vj" id="aHr-DB-0nK"/>
+                <outlet property="tagTitleLabel" destination="KXY-Sh-rzr" id="gGo-QJ-qG0"/>
+                <outlet property="titleLabel" destination="MAF-mt-vhN" id="1Kg-kq-b5t"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-paypal-card-large-dark" width="523" height="327"/>
+        <image name="rock-concert" width="1680" height="584"/>
+    </resources>
+</document>
